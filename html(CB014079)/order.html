@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERmart - Order</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">Product Page</a>
+                    <ul class="sub-menu">
+                        <li><a href="dairy.html">Dairy Products</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="Cosmetics&Beauty.html">Cosmetics/Beauty</a></li>
+                    </ul>
+                </li>
+                <li><a href="order.html">Order Page</a></li>
+                <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-header">
+        <h1>Order Now...</h1>
+    </section>
+
+    <main><!--Order form-->>
+        <form id="order-form" action="#" method="POST"  class="order-form" onsubmit="return confirm('Your order has been placed successfully!');">
+            <label for="store">Select Branch:</label>
+            <select id="store" name="store" required>
+                <option value="store1">Colombo Branch</option>
+                <option value="store2">Kandy Branch</option>
+                <option value="store3">London Branch</option>
+                <option value="store4">Melbourne Branch</option>
+            </select>
+
+            <label for="shipping_method">Select Shipping Method:</label>
+            <select id="shipping_method" name="shipping_method" required>
+                <option value="standard">Standard Shipping</option>
+                <option value="express">Express Shipping</option>
+                <option value="same_day">Same Day Delivery</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="shipping_code">Shipping Code:</label>
+            <input type="text" id="shipping_code" name="shipping_code" required>
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="product1">Ambewela Vanilla Flavoured Milk</option>
+                <option value="product2">Ambewela Chocolate Flavoured Milk</option>
+                <option value="product3">Pelwatte Unsalted Butter</option>
+                <option value="product4">Pelwatte Garlic Butter</option>
+                <option value="product5">Highland Curd</option>
+                <option value="product6">Ambewela Set Yoghurt</option>
+                <option value="product7">Highland Set Yoghurt</option>
+                <option value="product8">Ambewela Cheese Spread</option>
+                <option value="product9">Potato</option>
+                <option value="product10">Pumpkin</option>
+                <option value="product11">Onion</option>
+                <option value="product12">Eggplant</option>
+                <option value="product13">Carrot</option>
+                <option value="product14">Green Beans</option>
+                <option value="product15">Cabbage</option>
+                <option value="product16">Batana</option>
+                <option value="product17">Luv Essence Deodorant</option>
+                <option value="product18">Goya Cologne Spray</option>
+                <option value="product19">Janet Cricket Sun Block</option>
+                <option value="product20">Swadeshi Kohomba Shower Cream</option>
+                <option value="product21">Kohomba Deo Fresh Soap Bar</option>
+                <option value="product22">Shield Soap Bar</option>
+                <option value="product23">Champion Soap Bar</option>
+                <option value="product24">Nature's Secret Anti-Ageing Sunscreen</option>
+                <option value="product25">Nature's Secret Aloe Foot Cream</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" placeholder="e.g. 250g" required>
+
+            <input type="submit" value="Place order">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 SUPERmart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
